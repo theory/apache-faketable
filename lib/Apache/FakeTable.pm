@@ -326,8 +326,7 @@ __END__
 
 =head1 BUGS
 
-Report all bugs via the CPAN Request Tracker at
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Apache-FakeTable>.
+Please send bug reports to <bug-apache-faketable@rt.cpan.org>.
 
 =head1 SEE ALSO
 
