@@ -196,11 +196,11 @@ sub merge {
   $table->do($coderef);
 
 Pass a code reference to this method to have it iterate over all of the
-key/value pairs in the table. Keys will multiple values will trigger the
+key/value pairs in the table. Keys with multiple values will trigger the
 execution of the code reference multiple times, once for each value. The code
 reference should expect two arguments: a key and a value. Iteration terminates
 when the code reference returns false, so be sure to have it return a true
-value if you wan it to iterate over every value in the table.
+value if you want it to iterate over every value in the table.
 
 =cut
 
