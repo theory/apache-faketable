@@ -1,6 +1,8 @@
 Revision history for Perl extension Apache::FakeTable.
 
-0.02
+0.03
+        - Added Test::Pod recommendation to Build.PL.
+        - Updated pod.t to use newer version of Test::Pod.
 
 0.02  Thu Sep  4 05:32:22 2003
         - Fixed behavior of each to match that of Apache::Table. It will now
