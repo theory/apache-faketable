@@ -1,7 +1,7 @@
 package Apache::FakeTable;
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 =head1 NAME
 
@@ -73,7 +73,7 @@ size of the table for storing values.
 =cut
 
 sub new {
-    # We actually ignore the optional argument.
+    # We actually ignore the optional initial size argument.
     my ($class, $r) = @_;
     unless (UNIVERSAL::isa($r, 'Apache')) {
         require Carp;
@@ -97,7 +97,7 @@ only the first value when it is called in a scalar context.
 =cut
 
 sub get {
-    tied(%{shift()})->get(@_);
+    tied(%{shift()})->_get(@_);
 }
 
 =head3 set()
@@ -167,7 +167,7 @@ sub add {
         Carp::carp "Use of uninitialized value in null operation";
         $_[2] = '';
     }
-    tied(%{shift()})->add(@_);
+    tied(%{shift()})->_add(@_);
 }
 
 =head3 merge()
@@ -239,7 +239,7 @@ sub STORE {
     $self->{lc $key} = [ $key => ["$value"] ];
 }
 
-sub add {
+sub _add {
     my ($self, $key, $value) = @_;
     my $ckey = lc $key;
     if (exists $self->{$ckey}) {
@@ -269,7 +269,7 @@ sub FETCH {
       : $val->[1][0];
 }
 
-sub get {
+sub _get {
     my ($self, $key) = @_;
     my $ckey = lc $key;
     # Prevent autovivication.

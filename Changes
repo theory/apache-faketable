@@ -1,5 +1,7 @@
 Revision history for Perl extension Apache::FakeTable.
 
+0.02
+
 0.02  Thu Sep  4 05:32:22 2003
         - Fixed behavior of each to match that of Apache::Table. It will now
           return multiple key/value pairs for a single key that has multiple
