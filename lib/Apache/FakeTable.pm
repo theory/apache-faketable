@@ -1,7 +1,7 @@
 package Apache::FakeTable;
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 =head1 NAME
 
@@ -271,6 +271,10 @@ __END__
 
 Report all bugs via the CPAN Request Tracker at
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Apache-FakeTable>.
+
+=head1 SEE ALSO
+
+L<Apache::Table|Apache::Table>.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Apache-FakeTable
-version: 0.05
+version: 0.01
 license: perl
 distribution_type: module
 requires: {}
@@ -9,6 +9,9 @@ build_requires: {}
 conflicts: {}
 provides:
   Apache::FakeTable:
-    file: lib/Data/Types.pm
-    version: 0.05
-generated_by: Module::Build version 0.19_05
+    file: lib/Apache/FakeTable.pm
+    version: 0.01
+  Apache::FakeTableHash:
+    file: lib/Apache/FakeTable.pm
+    version: 0.01
+generated_by: Module::Build version 0.20
