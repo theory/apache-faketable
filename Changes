@@ -1,4 +1,4 @@
 Revision history for Perl extension Apache::FakeTable.
 
-0.01  
-        - original version.
+0.01  Sun Aug 31 22:58:05 2003
+        - Original version, poached from a patch for HTML::Mason.
