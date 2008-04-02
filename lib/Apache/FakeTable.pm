@@ -77,7 +77,7 @@ sub new {
     my ($class, $r) = @_;
     unless (UNIVERSAL::isa($r, 'Apache')) {
         require Carp;
-        Carp::croak "Usage: " . __PACKAGE__ . "::new(pclass, r, nalloc=10)";
+        Carp::croak("Usage: " . __PACKAGE__ . "::new(pclass, r, nalloc=10)");
     }
     my $self = {};
     tie %{$self}, 'Apache::FakeTableHash';
@@ -117,7 +117,7 @@ sub set {
     # Issue a warning if the value is undefined.
     if (! defined $value and $^W) {
         require Carp;
-        Carp::carp "Use of uninitialized value in null operation";
+        Carp::carp('Use of uninitialized value in null operation');
         $value = '';
     }
     $self->{$header} = $value;
@@ -164,7 +164,7 @@ sub add {
     # Issue a warning if the value is undefined.
     if (! defined $_[2] and $^W) {
         require Carp;
-        Carp::carp "Use of uninitialized value in null operation";
+        Carp::carp('Use of uninitialized value in null operation');
         $_[2] = '';
     }
     tied(%{shift()})->_add(@_);
@@ -233,7 +233,7 @@ sub STORE {
     # Issue a warning if the value is undefined.
     if (! defined $value and $^W) {
         require Carp;
-        Carp::carp "Use of uninitialized value in null operation";
+        Carp::carp('Use of uninitialized value in null operation');
         $value = '';
     }
     $self->{lc $key} = [ $key => ["$value"] ];

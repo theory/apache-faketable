@@ -4,6 +4,8 @@ Revision history for Perl extension Apache::FakeTable.
         - Updated pod.t to use newer version of Test::Pod.
         - Added the "configure_requires", "build_requires", and "recommends"
           parameters to Build.PL.
+        - Fixed syntax error under Perl 5.10. Reported by IMACAT via
+          cpan-testers.
 
 0.02  Thu Sep  4 05:32:22 2003
         - Fixed behavior of each to match that of Apache::Table. It will now
