@@ -3,11 +3,22 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.03';
 
+=begin comment
+
+Fake-out Module::Build. Delete if it ever changes to support =head1 headers
+other than all uppercase.
+
 =head1 NAME
 
 Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
 
-=head1 SYNOPSIS
+=end comment
+
+=head1 Name
+
+Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
+
+=head1 Synopsis
 
   use Apache::FakeTable;
 
@@ -22,7 +33,7 @@ Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
       print "$key: $val\n";
   }
 
-=head1 DESCRIPTION
+=head1 Description
 
 This class emulates the behavior of the L<Apache::Table|Apache::Table> class,
 and is designed to behave exactly like Apache::Table. This means that all keys
@@ -59,7 +70,7 @@ in turn.
 Otherwise, things should be quite hash-like, particularly when a key has only
 a single value.
 
-=head1 INTERFACE
+=head1 Interface
 
 =head3 new()
 
@@ -324,19 +335,33 @@ sub DESTROY { delete $curr_keys{shift()}; }
 1;
 __END__
 
-=head1 BUGS
+=head1 Support
 
-Please send bug reports to <bug-apache-faketable@rt.cpan.org>.
+This module is stored in an open repository at the following address:
 
-=head1 SEE ALSO
+  L<https://svn.kineticode.com/Apache-FakeTable/trunk/>
+
+Patches against SVN::Notify are welcome. Please send bug reports to
+<bug-apache-faketable@rt.cpan.org>.
+
+=head1 See Also
 
 L<Apache::Table|Apache::Table>.
 
+=head1 Author
+
+=begin comment
+
+Fake-out Module::Build. Delete if it ever changes to support =head1 headers
+other than all uppercase.
+
 =head1 AUTHOR
+
+=end comment
 
 David Wheeler <david@kineticode.com>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 Copyright and License
 
 Copyright (c) 2003-2008, David Wheeler. All Rights Reserved.
 
