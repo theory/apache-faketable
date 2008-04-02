@@ -1,4 +1,4 @@
-Apache/FakeTable version 0.03
+Apache/FakeTable version 0.04
 =============================
 
 This class emulates the behavior of the Apache::Table class.
@@ -40,7 +40,7 @@ distribution, in order to successfullly run ./Build test.
 
 COPYRIGHT AND LICENCE
 
-Copyright (c) 2003, David Wheeler. All Rights Reserved.
+Copyright (c) 2003-2008, David Wheeler. All Rights Reserved.
 
-This module is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself.
+This module is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.

@@ -1,7 +1,7 @@
 package Apache::FakeTable;
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 =begin comment
 
