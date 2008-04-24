@@ -1,6 +1,7 @@
 Revision history for Perl extension Apache::FakeTable.
 
 0.04
+        - Fixed a pasto in the Support section.
 
 0.03    2008-04-02T00:14:25
         - Updated pod.t to use newer version of Test::Pod.
