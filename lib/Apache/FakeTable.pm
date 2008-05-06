@@ -1,5 +1,6 @@
 package Apache::FakeTable;
 use strict;
+use 5.006;
 use vars qw($VERSION);
 $VERSION = '0.04';
 
