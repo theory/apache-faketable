@@ -4,8 +4,8 @@ Revision history for Perl extension Apache::FakeTable.
         - Fixed a pasto in the Support section.
         - Added Module::Build to the "build_requires" parameter in Build.PL to
           eliminate a warning during `make dist`.
-        - Now requires 5.6 or higher. It always did, but now it's explicit.
-          5.5 failure reported by srezic.
+        - Fixed a bug to allow this module to work on Perl 5.5. Reported by
+          Slaven Rezic.
 
 0.03    2008-04-02T00:14:25
         - Updated pod.t to use newer version of Test::Pod.

@@ -1,6 +1,5 @@
 package Apache::FakeTable;
 use strict;
-use 5.006;
 use vars qw($VERSION);
 $VERSION = '0.04';
 
@@ -315,7 +314,7 @@ sub FIRSTKEY {
     my $self = shift;
     # Reset perl's iterator and then get the key.
     keys %$self;
-    $self->$keyer;
+    $self->$keyer();
 }
 
 sub NEXTKEY {
@@ -327,7 +326,7 @@ sub NEXTKEY {
       && ++$curr_keys{$self}->[1] <= $#{$self->{$ckey}[1]};
 
     # Otherwise, just get the next key.
-    $self->$keyer;
+    $self->$keyer();
 }
 
 # Just be sure to clear out the current key.
