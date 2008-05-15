@@ -1,5 +1,7 @@
 Revision history for Perl extension Apache::FakeTable.
 
+0.05
+
 0.04  2008-05-15T03:33:49
         - Fixed a pasto in the Support section.
         - Added Module::Build to the "build_requires" parameter in Build.PL to
