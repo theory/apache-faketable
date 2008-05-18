@@ -37,8 +37,9 @@ is( $table->{Hey}, 1, "Get first 'Hey' value via direct hash access" );
 # Keys returns the same key twice;
 is_deeply( [keys %$table], [qw(Hey Hey)], 'Check keys %$table' );
 
-# Values returns the first value twice. That's a pity.
-is_deeply( [values %$table], [1, 1], 'Check values %$table' );
+# Values returns the first value twice on newer perls. That's a pity.
+my $two = $] < 5.006 ? 2 : 1;
+is_deeply( [values %$table], [1, $two], 'Check values %$table' );
 
 # Try each.
 my $i;
@@ -87,7 +88,7 @@ ok( ! exists $table->{Hey}, "Hey doesn't exist" );
 is( $table->{Hey}, undef, 'Hey is undef' );
 
 {
-    my $rx = qr/Use of uninitialized value in null operation at .* line 97/;
+    my $rx = qr/Use of uninitialized value in null operation at .* line 98/;
     local $SIG{__WARN__} = sub {
         like( shift, $rx, "Check warning" );
     };
@@ -98,13 +99,13 @@ is( $table->{Hey}, undef, 'Hey is undef' );
     is( $table->{Hey}, '', "Get null string 'Hey'" );
     is( $table->get('Hey'), '', "Get null string 'Hey' with get()" );
 
-    $rx = qr/Use of uninitialized value in null operation at .* line 102/;
+    $rx = qr/Use of uninitialized value in null operation at .* line 103/;
     ok( !($table->{Hey} = undef), "Store 'Hey' as undef");
     is( $table->{Hey}, '', "Get null string 'Hey'" );
     is( $table->get('Hey'), '', "Get null string 'Hey' with get()" );
 
     # Adding undef also yields the warning.
-    $rx = qr/Use of uninitialized value in null operation at .* line 108/;
+    $rx = qr/Use of uninitialized value in null operation at .* line 109/;
     ok( $table->add('Hey', undef), "Add undef to 'Hey'");
 
     # Turning warnings off should work.
