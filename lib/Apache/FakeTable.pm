@@ -3,17 +3,6 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.05';
 
-=begin comment
-
-Fake-out Module::Build. Delete if it ever changes to support =head1 headers
-other than all uppercase.
-
-=head1 NAME
-
-Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
-
-=end comment
-
 =head1 Name
 
 Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
@@ -350,16 +339,7 @@ L<Apache::Table|Apache::Table>.
 
 =head1 Author
 
-=begin comment
-
-Fake-out Module::Build. Delete if it ever changes to support =head1 headers
-other than all uppercase.
-
-=head1 AUTHOR
-
-=end comment
-
-David Wheeler <david@justatheory.com>
+David E. Wheeler <david@justatheory.com>
 
 =head1 Copyright and License
 
