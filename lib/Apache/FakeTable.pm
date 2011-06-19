@@ -326,12 +326,13 @@ __END__
 
 =head1 Support
 
-This module is stored in an open repository at the following address:
+This module is stored in an open L<GitHub
+repository|http://github.com/theory/apache-faketable/>. Feel free to fork and
+contribute!
 
-  L<https://svn.kineticode.com/Apache-FakeTable/trunk/>
-
-Patches against Apache::FakeTable are welcome. Please send bug reports to
-<bug-apache-faketable@rt.cpan.org>.
+Please file bug reports via L<GitHub
+Issues|http://github.com/theory/apache-faketable/issues/> or by sending mail to
+L<bug-Apache-FakeTable@rt.cpan.org|mailto:bug-Apache-FakeTable@rt.cpan.org>.
 
 =head1 See Also
 
