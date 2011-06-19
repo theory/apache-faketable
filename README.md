@@ -41,9 +41,10 @@ This module requires no modules or libraries not already included with Perl.
 Earlier versions of Perl will need Test::More, part of the Test::Simple
 distribution, in order to successfullly run ./Build test.
 
-COPYRIGHT AND LICENCE
+Copyright and Licence
+---------------------
 
-Copyright (c) 2003-2008, David Wheeler. Some Rights Reserved.
+Copyright (c) 2003-2011, David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

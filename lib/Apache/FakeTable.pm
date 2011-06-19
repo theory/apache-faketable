@@ -24,7 +24,7 @@ Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
 
   my $table = Apache::FakeTable->new($r);
 
-  $table->set(From => 'david@kineticode.com');
+  $table->set(From => 'david@example.com');
 
   $table->add(Cookie => 'One Cookie');
   $table->add(Cookie => 'Another Cookie');
@@ -359,11 +359,11 @@ other than all uppercase.
 
 =end comment
 
-David Wheeler <david@kineticode.com>
+David Wheeler <david@justatheory.com>
 
 =head1 Copyright and License
 
-Copyright (c) 2003-2008, David Wheeler. Some Rights Reserved.
+Copyright (c) 2003-2011, David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
