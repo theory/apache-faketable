@@ -1,7 +1,8 @@
 Apache/FakeTable version 0.05
 =============================
 
-This class emulates the behavior of the Apache::Table class.
+This class emulates the behavior of the
+[Apache::Table](http://search.cpan.org/perldoc?Apache::Table) class.
 
 Apache::FakeTable is designed to behave exactly like Apache::Table, and
 differs in only one respect. When a given key has multiple values in an
