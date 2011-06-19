@@ -5,7 +5,7 @@ $VERSION = '0.05';
 
 =head1 Name
 
-Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
+Apache::FakeTable - Pure Perl implementation of the Apache::Table interface
 
 =head1 Synopsis
 
@@ -24,9 +24,9 @@ Apache::FakeTable - Pure Perl implementation of the Apache::Table interface.
 
 =head1 Description
 
-This class emulates the behavior of the L<Apache::Table|Apache::Table> class,
-and is designed to behave exactly like Apache::Table. This means that all keys
-are case-insensitive and may have multiple values. As a drop-in substitute for
+This class emulates the behavior of the L<Apache::Table> class, and is
+designed to behave exactly like Apache::Table. This means that all keys are
+case-insensitive and may have multiple values. As a drop-in substitute for
 Apache::Table, you should be able to use it exactly like Apache::Table.
 
 You can treat an Apache::FakeTable object much like any other hash. However,
@@ -66,9 +66,9 @@ a single value.
   my $table = Apache::FakeTable->new($r);
   $table = Apache::FakeTable->new($r, $initial_size);
 
-Returns a new C<Apache::FakeTable> object. An L<Apache|Apache> object is
-required as the first argument. An optional second argument sets the initial
-size of the table for storing values.
+Returns a new C<Apache::FakeTable> object. An L<Apache> object is required as
+the first argument. An optional second argument sets the initial size of the
+table for storing values.
 
 =cut
 
@@ -336,7 +336,7 @@ L<bug-Apache-FakeTable@rt.cpan.org|mailto:bug-Apache-FakeTable@rt.cpan.org>.
 
 =head1 See Also
 
-L<Apache::Table|Apache::Table>.
+L<Apache::Table>.
 
 =head1 Author
 
