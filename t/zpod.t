@@ -1,6 +1,4 @@
-#!perl -w
-
-# $Id$
+#!/usr/bin/perl -w
 
 use strict;
 use Test::More;
