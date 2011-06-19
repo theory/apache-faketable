@@ -6,3 +6,5 @@
 ^MANIFEST\.SKIP$
 ^Apache-FakeTable
 \.git
+^MYMETA\.yml$
+^MYMETA\.json$

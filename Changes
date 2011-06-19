@@ -3,6 +3,8 @@ Revision history for Perl extension Apache::FakeTable.
 0.05
         - Fixed a test failure on Perl 5.5 (I think). Reported by Slaven Rezic
           via cpan-testers.
+        - Moved to GitHub.
+        - Includes a "traditional, rather than "passthrough", `Makefile.PL`.
 
 0.04  2008-05-15T03:33:49
         - Fixed a pasto in the Support section.
