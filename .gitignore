@@ -1,0 +1,9 @@
+/_build
+/blib
+/Apache-FakeTable-*
+/MANIFEST
+/MANIFEST.bak
+/*META.*
+/Build
+/Makefile*
+/pm_to_blib
