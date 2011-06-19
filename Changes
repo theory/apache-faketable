@@ -1,6 +1,6 @@
 Revision history for Perl extension Apache::FakeTable.
 
-0.05
+0.05  2011-06-19T05:15:24
         - Fixed a test failure on Perl 5.5 (I think). Reported by Slaven Rezic
           via cpan-testers.
         - Moved to GitHub.
