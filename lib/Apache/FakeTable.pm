@@ -218,7 +218,8 @@ sub do {
 ##############################################################################
 # This is the implementation of the case-insensitive hash that each table
 # object is based on.
-package Apache::FakeTableHash;
+package
+Apache::FakeTableHash;
 use strict;
 my %curr_keys;
 
