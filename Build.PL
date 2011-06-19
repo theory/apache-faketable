@@ -9,7 +9,7 @@ my $build = Module::Build->new(
         'Module::Build' => '0.2701',
         'Test::More'    => '0.17',
     },
-    recommends         => { 'Test::Pod'     => '1.20'   },
+    recommends         => { 'Test::Pod'     => '1.41'   },
     meta_merge => {
         resources => {
             homepage   => 'http://search.cpan.org/dist/Apache-FakeTable/',
