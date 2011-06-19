@@ -1,4 +1,4 @@
-Apache/FakeTable version 0.05
+Apache/FakeTable version 0.06
 =============================
 
 This class emulates the behavior of the
