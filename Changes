@@ -1,6 +1,6 @@
 Revision history for Perl extension Apache::FakeTable.
 
-0.06
+0.06  2013-10-16T20:53:33Z
         - Hid the internal Apache::FakeTableHash module from the CPAN
           indexer.
         - Fixed a warning "Modification of a read-only value" on Perl 5.19.4.
