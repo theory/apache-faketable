@@ -1,5 +1,7 @@
 Revision history for Perl extension Apache::FakeTable.
 
+0.07
+
 0.06  2013-10-16T20:53:33Z
         - Hid the internal Apache::FakeTableHash module from the CPAN
           indexer.
