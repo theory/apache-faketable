@@ -165,7 +165,7 @@ sub add {
     if (! defined $_[2] and $^W) {
         require Carp;
         Carp::carp('Use of uninitialized value in null operation');
-        $_[2] = '';
+        splice @_, 2, 1, '';
     }
     tied(%{shift()})->_add(@_);
 }
